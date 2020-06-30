@@ -37,6 +37,6 @@ app.get("*", function(req, res){
 })
 
 // need a listen to actually listen for http requests
-app.listen( function(){
-    console.log("server is running on port 5000")
-})
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
