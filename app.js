@@ -1,5 +1,6 @@
 let express = require ("express");
 let app = express();
+const PORT = process.env.PORT || 3000;
 // this code is used to serve assets
 app.use(express.static("public"))
 // code to set files as ejs (so they dont need to be named later)
